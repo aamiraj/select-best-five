@@ -90,15 +90,15 @@ document.getElementById("neymar-jr-btn").addEventListener("click", function () {
 })
 
 document.getElementById("ronaldo-btn").addEventListener("click", function () {
-    const text = getTextById("ronaldo", addedPlayers);
+    const text = getTextById("ronaldo");
     const addedPlayers = addPlayers(text, playersList);
     addList(text);
-    addDisabled("ronaldo-btn");
+    addDisabled("ronaldo-btn", addedPlayers);
 })
 
 document.getElementById("salah-btn").addEventListener("click", function () {
-    const text = getTextById("salah", addedPlayers);
+    const text = getTextById("salah");
     const addedPlayers = addPlayers(text, playersList);
     addList(text);
-    addDisabled("salah-btn");
+    addDisabled("salah-btn", addedPlayers);
 })
